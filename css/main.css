@@ -59,7 +59,8 @@ ul.posts li
     list-style: none;
 }
 
-top
+#top
 {
     background-color: #FF00FF;
+    width: 100%;
 }
