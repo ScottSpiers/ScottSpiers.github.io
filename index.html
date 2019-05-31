@@ -2,16 +2,25 @@
 layout: default
 title: Scott Spiers, Portfolio
 ---
-<div class = "blurb">
+<div class="slideshow-container">
+    <div class="fadeSlides">
+        <img src="{{site.url}}/images/LTrees.png" style="display: block; margin: auto;"/>
+    </div>
+    
+    <div class="fadeSlides">
+        <img src="{{site.url}}/images/stochasticTree.png" style="display: block; margin: auto;"/>
+    </div>
+    
+    <div class="fadeSlides">
+        <img src="{{site.url}}/images/DynamicReflection.png" style="display: block; margin: auto;"/>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
 
-    <h1> Scott Spiers</h1>
-    <p>
-        Student of University of Abertay Dundee studying for MSc Computer Games Technology.
-        Also achieved BSc(Hons) First Class in Computer Science from the University of Strathclyde.
-        
-        
-        <a href="/about"> More about me...</a>
-        
-        
-    </p>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
