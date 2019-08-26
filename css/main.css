@@ -88,6 +88,11 @@ footer
     display: none;
 }
 
+.module
+{
+    clear: both;
+}
+
 .prev, .next
 {
     cursor: pointer;
