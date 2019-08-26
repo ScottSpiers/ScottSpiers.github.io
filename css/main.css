@@ -69,6 +69,7 @@ footer
 
 .slideshow-container
 {
+    float: inherit;
     max-width: 1000px;
     position: relative;
     margin: auto;
