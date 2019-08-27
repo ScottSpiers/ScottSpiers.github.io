@@ -141,10 +141,12 @@ footer
 .left
 {
     float: left;
+    align: left;
 }
 
 .right
 {
     float: right;
+    align: right;
 }
 
