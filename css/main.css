@@ -71,7 +71,7 @@ footer
 .slideshow-container
 {
     float: inherit;
-    max-width: 1000px;
+    width: 50%;
     position: relative;
     margin: auto;
 }
@@ -81,6 +81,7 @@ footer
     font-size: 1.5em;
     line-height: 33em;
     text-align: center;
+    width: 50%;
 }
 
 .fadeSlides .faseSlides2
@@ -141,12 +142,10 @@ footer
 .left
 {
     float: left;
-    align: left;
 }
 
 .right
 {
     float: right;
-    align: right;
 }
 
