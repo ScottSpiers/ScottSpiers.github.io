@@ -40,10 +40,14 @@
         showSlides(slideIndex = n);
     }
 
-    function showSlides(n) {
+    function showSlides(n, s) {
         var i;
-        var slides = document.getElementsByClassName("fadeSlides");
-        var dots = document.getElementsByClassName("dot");
+        var numSlides = "";
+        
+        if(s > 0)
+            numSlides +=  s;
+        var slides = document.getElementsByClassName("fadeSlides" + numSlides);
+        var dots = document.getElementsByClassName("dot" + numSlides);
         
         if(n > slides.length) {
             slideIndex = 1;

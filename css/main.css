@@ -83,7 +83,7 @@ footer
     text-align: center;
 }
 
-.fadeSlides
+.fadeSlides .faseSlides2
 {
     display: none;
 }
@@ -121,7 +121,7 @@ footer
     text-decoration: none;
 }
 
-.dot
+.dot .dot2
 {
     cursor: pointer;
     height: 15px;
