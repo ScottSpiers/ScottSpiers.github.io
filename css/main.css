@@ -71,17 +71,16 @@ footer
 .slideshow-container
 {
     float: inherit;
-    width: 50%;
-    position: relative;
     margin: auto;
+    position: relative;
 }
 
 .text-container
 {
-    font-size: 1.5em;
-    line-height: 33em;
     text-align: center;
-    width: 50%;
+    font-size: 1.5em;
+    position: relative;
+    top:175px;
 }
 
 .fadeSlides .faseSlides2
@@ -125,8 +124,8 @@ footer
 .dot .dot2
 {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10%;
+    width: 50%;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -141,11 +140,13 @@ footer
 
 .left
 {
+    width: 50%;
     float: left;
 }
 
 .right
 {
+    width: 50%;
     float: right;
 }
 
