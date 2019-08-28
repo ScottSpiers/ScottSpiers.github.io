@@ -47,6 +47,11 @@ h1
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
+h2
+{
+    border-bottom: 1px solid #bbb;
+}
+
 p
 {
     font-size: 1.5em;
@@ -91,6 +96,7 @@ footer
 .module
 {
     clear: both;
+    padding-top: 2.5%;
 }
 
 .prev, .next
@@ -121,11 +127,11 @@ footer
     text-decoration: none;
 }
 
-.dot .dot2
+.dot, .dot2
 {
     cursor: pointer;
-    height: 10%;
-    width: 50%;
+    height: 12px;
+    width: 12px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
