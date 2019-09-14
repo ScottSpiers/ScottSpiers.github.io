@@ -76,8 +76,8 @@ title: Scott Spiers, Portfolio
 </div>
 
 <script>
-var mod = document.GetElementById("mod");
-var span = document.GetElementById("span");
+var mod = document.getElementById("mod");
+var span = document.getElementById("span");
 document.getElementsByClassName("module")[0].onclick = function(event){mod.style.display = "block";};
 span.onclick = function() {mod.style.display ="none";}
 window.onclick = function(event){ if(event.target == mod) {mod.style.display = "none";}}
