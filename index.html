@@ -70,3 +70,17 @@ title: Scott Spiers, Portfolio
     </div>
 </div>
 
+<div id="mod" class="Modal">
+    <span id="spane" class="close">&times;</span>
+    <p>Testing Modal...</p>
+</div>
+
+<script>
+var mod = document.GetElementById("mod");
+var span = document.GetElementById("span");
+document.getElementsByClassName('Module')[0].addEventListener('click',function(event){mod.style.display = "block"});
+span.onclick = function() {modal.style.display ="none";}
+window.onclick = function(event){ if(event.target == mod) {mod.style.display = "none";}}
+
+</script>
+
