@@ -81,7 +81,7 @@ var mod = document.getElementById("mod");
 var span = document.getElementById("span");
 document.getElementsByClassName("module")[0].addEventListener("click", function(event){mod.style.display = "block"; isMod = true;});
 span.onclick = function() {mod.style.display ="none";}
-window.onclick = function(event){ if(event.target != mod) {if(isMod) mod.style.display = "none";}}
+window.onclick = function(event){ if(event.target != mod) {if(isMod) {mod.style.display = "none"; isMod = false;}}}
 
 </script>
 
