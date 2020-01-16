@@ -1,6 +1,6 @@
 ---
 layout: subpage
-site.github.repository_url: github.com/ScottSpiers/OpenGL
+url: github.com/ScottSpiers/OpenGL
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
