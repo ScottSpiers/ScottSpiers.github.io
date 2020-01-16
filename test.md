@@ -1,7 +1,6 @@
 ---
-site.github.is_user_page: false
-site.github.is_project_page: true
 layout: subpage
+site.github.repository_url: github.com/ScottSpiers/OpenGL
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
