@@ -1,4 +1,6 @@
 ---
+site.github.is_user_page: false
+site.github.is_project_page: true
 layout: subpage
 ---
 
