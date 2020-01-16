@@ -1,6 +1,6 @@
 ---
 layout: subpage
-repo_url: github.com/ScottSpiers/OpenGL
+repo_url: https://www.github.com/ScottSpiers/OpenGL
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
