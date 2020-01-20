@@ -16,7 +16,7 @@
             
             <div class = "container">
                 {% for category in site.category-list %}
-					<h2>{{category[0]}}</h2>
+					<h2>{{category}}</h2>
 					{% for p in site.pages %}
 						{% if p.category[0] contains category[0] %}
 							<div class="module">
