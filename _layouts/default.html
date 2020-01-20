@@ -18,7 +18,7 @@
                 {% for category in site.categories %}
 					<h2>{{category[0]}}</h2>
 					{% for p in site.pages %}
-						{% if p.category contains category[0] %}
+						{% if p.category[0] contains category[0] %}
 							<div class="module">
 								<h2 style="text-align: center">{{p.name}}</h2>
 								<div class = "left">
