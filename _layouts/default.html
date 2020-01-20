@@ -15,7 +15,7 @@
             </nav>
             
             <div class = "container">
-                {% for category in site.categories %}
+                {% for category in site.category-list %}
 					<h2>{{category[0]}}</h2>
 					{% for p in site.pages %}
 						{% if p.category[0] contains category[0] %}
@@ -69,6 +69,7 @@
 				window.onclick = function(event){ if(event.target == mod) {mod.style.display = "none";}}
 				</script>
 				-->
+
 				{{content}}
             </div>
         
