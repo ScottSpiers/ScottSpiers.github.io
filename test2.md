@@ -1,6 +1,9 @@
 ---
 layout: subpage
 repo_url: https://www.github.com/ScottSpiers/ProceduralKit
+name: Advanced Procedural Methods
+category: Computer Games Tech
+thumb: images/stochasticTree.PNG
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

@@ -1,6 +1,9 @@
 ---
 layout: subpage
 repo_url: https://www.github.com/ScottSpiers/OpenGL
+name: Masters Project
+category: Computer Games Tech
+thumb: images/LTrees.PNG
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
