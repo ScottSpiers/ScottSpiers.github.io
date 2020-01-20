@@ -24,26 +24,9 @@
 								<div class = "left">
 									<div class="slideshow-container">
 										<div class="fadeSlides">
-											<img src="{{site.url}}/images/LTrees.PNG" style= "width: 100%; height: 25%;"/>
+											<img src="{{site.url}} {{p.thumb}}" style= "width: 100%; height: 25%;"/>
 										</div>
-										
-										<div class="fadeSlides">
-											<img src="{{site.url}}/images/stochasticTree.PNG" style="width: 100%; height: 25%;"/>
-										</div>
-										
-										<div class="fadeSlides">
-											<img src="{{site.url}}/images/DynamicReflection.PNG" style="width: 100%; height: 25%;"/>
-										</div>
-										
-										<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
-										<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
-									</div>
-									
-									<div style="text-align:center">
-											<span class="dot" onclick="currentSlide(1,0)"></span>
-											<span class="dot" onclick="currentSlide(2,0)"></span>
-											<span class="dot" onclick="currentSlide(3,0)"></span>
-									</div>
+									</div>									
 								</div>
 								<div class = "right">
 									<div class="text-container">
@@ -128,6 +111,25 @@
     }
     </script>
 	
+	<!-- For subpages
+	<div class="fadeSlides">
+		<img src="{{site.url}}/images/stochasticTree.PNG" style="width: 100%; height: 25%;"/>
+	</div>
+	
+	<div class="fadeSlides">
+		<img src="{{site.url}}/images/DynamicReflection.PNG" style="width: 100%; height: 25%;"/>
+	</div>
+	
+	<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+	
+	OUTSIDE SLIDESHOW CONTAINER
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1,0)"></span>
+		<span class="dot" onclick="currentSlide(2,0)"></span>
+		<span class="dot" onclick="currentSlide(3,0)"></span>
+	</div>
+	-->
  </html>
 
 
