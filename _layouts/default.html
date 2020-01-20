@@ -55,18 +55,7 @@
 					{% endfor %}
 				{% endfor %}
 				
-				<div id="mod" class="modal">
-					<span id="span" class="close">&times;</span>
-					<a href="https://ScottSpiers.github.io/test">Testing Modal...</a>
-				</div>
-
-				<script>
-				var mod = document.getElementById("mod");
-				var span = document.getElementById("span");
-				document.getElementsByClassName("module")[0].addEventListener("click", function(event){mod.style.display = "block";});
-				span.onclick = function() {mod.style.display ="none";}
-				window.onclick = function(event){ if(event.target == mod) {mod.style.display = "none";}}
-				</script>
+				{{content}}
             </div>
         
             
