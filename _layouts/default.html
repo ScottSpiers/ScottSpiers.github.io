@@ -14,6 +14,8 @@
                 </ul>
             </nav>
             
+            {{content}}
+
             <div class = "container">
                 {% for category in site.category-list %}
 					<h2>{{category}}</h2>
@@ -50,10 +52,7 @@
 				document.getElementsByClassName("module")[0].addEventListener("click", function(event){mod.style.display = "block";});
 				span.onclick = function() {mod.style.display ="none";}
 				window.onclick = function(event){ if(event.target == mod) {mod.style.display = "none";}}
-				</script>
-				
-
-				{{content}}
+				</script>				
             </div>
         
             
