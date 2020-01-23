@@ -14,9 +14,10 @@
                 </ul>
             </nav>
             
-            {{content}}
+            
 
             <div class = "container">
+                {{content}}
                 {% for category in site.category-list %}
 					<h2>{{category}}</h2>
 					{% for p in site.pages %}
