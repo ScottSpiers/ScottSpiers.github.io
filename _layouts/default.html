@@ -24,7 +24,7 @@
 					{% for p in site.pages %}
                         {% if p.category[0] contains category %}
                             {% assign remainder = forloop.index | modulo: 2 %}
-                            {%if remainder == 0 % }
+                            {%if remainder == 0 %}
 							    <div class="module" style="float: left">
                             {% else %}
                                 <div class="module" style="float: right">
