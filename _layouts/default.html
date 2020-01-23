@@ -20,12 +20,12 @@
 				{{content}}
 				<p>PROJECTS</p>
                 {% for category in site.category-list %}
-                    {% assign i = 0 %}
+                    {% increment i %}
 					<h2 style="clear: both">{{category}}</h2>
                     {% for p in site.pages %}
                         {% if p.category[0] contains category %}
                             {% assign remainder = i | modulo: 2 %}
-                            {% assign i = i | add: 1 %}
+                            {% increment i %}
                             {%if remainder == 0 %}
 							    <div class="module" style="float: left">
                             {% else %}
