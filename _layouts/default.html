@@ -22,8 +22,13 @@
 				{% for category in site.category-list %}
 					<h2>{{category}}</h2>
 					{% for p in site.pages %}
-						{% if p.category[0] contains category %}
-							<div class="module">
+                        {% if p.category[0] contains category %}
+                            {% asssign remainder = forloop.index0 | modulo: 2 %}
+                            {%if remainder == 0 % }
+							    <div class="module" style="float: left">
+                            {% else %}
+                                <div class="module" style="float: right">
+                            {% endif %}
 								<h2>{{p.name}}</h2>
 								<img src="{{site.url}}{{p.thumb}}" style= "width: 600px; height: 400px;"/>						
 								<div class="text-container">
