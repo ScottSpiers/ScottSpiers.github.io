@@ -98,10 +98,9 @@ footer
 
 .module
 {
-    clear: both;
+    width: 50%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
-    width: 50%;
 }
 
 .module:hover
