@@ -103,10 +103,10 @@ footer
     padding-bottom: 2.5%;
 }
 
-.module:hover
+/* .module:hover
 {
     border: 1px solid blue;
-}
+} */
 
 .modal
 {

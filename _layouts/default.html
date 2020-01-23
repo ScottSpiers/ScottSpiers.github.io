@@ -20,23 +20,16 @@
 				{{content}}
 				<p>PROJECTS</p>
                 {% for category in site.category-list %}
-                    {% increment i %}
 					<h2 style="clear: both">{{category}}</h2>
                     {% for p in site.pages %}
-                        {% if p.category[0] contains category %}
-                            {% assign remainder = i | modulo: 2 %}
-                            {% increment i %}
-                            {%if remainder == 0 %}
-							    <div class="module" style="float: left">
-                            {% else %}
-                                <div class="module" style="float: right">
-                            {% endif %}
-								<h2>{{p.name}}</h2>
-								<img src="{{site.url}}{{p.thumb}}" style= "width: 600px; height: 400px;"/>						
-								<div class="text-container">
-									<p>Testing smaller module blocks...</p>
-								</div>
-							 </div>
+                        {% if p.category[0] contains category %}  
+                            <div class="module" style="float: left">
+                                <h2>{{p.name}}</h2>
+                                <img src="{{site.url}}{{p.thumb}}" style= "width: 600px; height: 400px;"/>						
+                                <div class="text-container">
+                                    <p>Testing smaller module blocks...</p>
+                                </div>
+                            </div>
 						{% endif %}
 					{% endfor %}
 				{% endfor %}
@@ -129,7 +122,11 @@
 		<span class="dot" onclick="currentSlide(1,0)"></span>
 		<span class="dot" onclick="currentSlide(2,0)"></span>
 		<span class="dot" onclick="currentSlide(3,0)"></span>
-	</div>
+    </div>
+    
+    {% assign remainder = i | modulo: 2 %}
+    {% increment i %}
+    {%if remainder == 0 %}
 	-->
  </html>
 
