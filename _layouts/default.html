@@ -18,24 +18,17 @@
 
             <div class = "container">
                 {{content}}
+                <p>PROJECTS</p>
                 {% for category in site.category-list %}
 					<h2>{{category}}</h2>
 					{% for p in site.pages %}
 						{% if p.category[0] contains category %}
 							<div class="module">
-								<h2 style="text-align: center">{{p.name}}</h2>
-								<div class = "left">
-									<div class="slideshow-container">
-										<div class="fadeSlides">
-											<img src="{{site.url}}{{p.thumb}}" style= "width: 100%; height: 25%;"/>
-										</div>
-									</div>									
-								</div>
-								<div class = "right">
-									<div class="text-container">
-										<p>Testing floating...</p>
-									</div>
-								</div>
+								<h2>{{p.name}}</h2>
+								<img src="{{site.url}}{{p.thumb}}" style= "width: 700px; height: 400px;"/>						
+                                <div class="text-container">
+                                    <p>Testing smaller module blocks...</p>
+                                </div>
 							 </div>
 						{% endif %}
 					{% endfor %}
