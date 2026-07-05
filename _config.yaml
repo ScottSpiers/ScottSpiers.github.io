@@ -1,7 +1,8 @@
 name: Scott_Spiers_Portfolio
 logo: /images/logo.PNG
 category-list:
-  - Computer Games Tech
-  - Computer Science
+  - About
+  - Work
+  - Personal Projects
 theme: jekyll-theme-minimal
 

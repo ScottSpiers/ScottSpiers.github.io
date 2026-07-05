@@ -10,7 +10,7 @@
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/about.html">About</a></li>
-					<li><a href="/cv.html">CV</a></li>
+					<li><a href="/reviews.html">Reviews</a></li>
 				</ul>
 			</nav>
 			
@@ -21,7 +21,7 @@
 				<p>PROJECTS</p>
                 {% for category in site.category-list %}
 					<h2 style="clear: both">{{category}}</h2>
-                    {% for p in site.pages %}
+                    {% for p in site.pages %} <!--This will be the slides prob shouldn't be pages-->
                         {% if p.category[0] contains category %}  
                             <div class="module" style="float: left">
                                 <h2>{{p.name}}</h2>
@@ -34,7 +34,7 @@
 					{% endfor %}
 				{% endfor %}
 				
-				
+				<!--Embedded YouTube? Inconsistency with About and Work?-->
 				<div id="mod" class="modal">
 					<span id="span" class="close">&times;</span>
 					<a href="https://ScottSpiers.github.io/test">Testing Modal...</a>
@@ -54,7 +54,7 @@
 				<ul>
 					<li><a href="mailto:scott.m.spiers@gmail.com">email</a></li>
 					<li><a href="https://github.com/ScottSpiers">github.com/ScottSpiers</a></li>
-					<li><a href="https://bitbucket.org/Scott_Spiers/">bitbucket.org/Scott_Spiers</a></li>
+					<li><a href="https://www.linkedin.com/in/scott-spiers-818351173//">LinkdIn</a></li>
 				</ul>
 			</footer>        
 		</body>
