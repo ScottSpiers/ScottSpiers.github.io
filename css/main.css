@@ -69,17 +69,9 @@ footer
 #top
 {
     font-size: 1em;
-    line-height: 2em;
+    line-height: 3em;
     background-color: #222222;
     text-align: right;
-}
-
-#top-left
-{
-    font-size: 1em;
-    line-height: 2em;
-    background-color: #222222;
-    text-align: left;
 }
 
 .slideshow-container
