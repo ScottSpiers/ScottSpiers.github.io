@@ -70,8 +70,16 @@ footer
 {
     font-size: 1em;
     line-height: 2em;
-    background-color: #888888;
+    background-color: #555555;
     text-align: right;
+}
+
+#top-left
+{
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #555555;
+    text-align: left;
 }
 
 .slideshow-container
