@@ -7,11 +7,15 @@
 		
 		<body>
 			<nav id="top">
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="/reviews.html">Reviews</a></li>
-				</ul>
+				<div><a href="/">Scott Spiers</a></div>
+				<div class="nav-items">
+					<a href="/#">Home</a>
+					<a href="/#about">About</a>
+					<a href="/games.html">Games</a>
+					<a href="/projects.html">Projects</a>
+					<a href="/jams.html">Jams</a>
+					<!--<a href="/reviews.html">Reviews</a>-->
+				</div>
 			</nav>
 			
             
@@ -32,98 +36,15 @@
                             </div>
 						{% endif %}
 					{% endfor %}
-				{% endfor %}
-				
-				<!--Embedded YouTube? Inconsistency with About and Work?-->
-				<div id="mod" class="modal">
-					<span id="span" class="close">&times;</span>
-					<a href="https://ScottSpiers.github.io/test">Testing Modal...</a>
-				</div>
-
-				<script>
-				var mod = document.getElementById("mod");
-				var span = document.getElementById("span");
-				document.getElementsByClassName("module")[0].addEventListener("click", function(event){mod.style.display = "block";});
-				span.onclick = function() {mod.style.display ="none";}
-				window.onclick = function(event){ if(event.target == mod) {mod.style.display = "none";}}
-				</script>				
+				{% endfor %}				
 			</div>
-		
 			
 			<footer>
-				<ul>
-					<li><a href="mailto:scott.m.spiers@gmail.com">email</a></li>
-					<li><a href="https://github.com/ScottSpiers">github.com/ScottSpiers</a></li>
-					<li><a href="https://www.linkedin.com/in/scott-spiers-818351173">LinkdIn</a></li>
-				</ul>
+				<a href="mailto:scott.m.spiers@gmail.com">email</a>
+				<a href="https://www.linkedin.com/in/scott-spiers-818351173">LinkdIn</a>
+				<a href="https://github.com/ScottSpiers">github.com/ScottSpiers</a>
 			</footer>        
 		</body>
-	
-	<!--
-	<script>
-	var slideIndex = 1;
-	showSlides(slideIndex, 0);
-	showSlides(slideIndex, 2);
-
-	function plusSlides(n, s) {
-		showSlides(slideIndex += n, s);
-	}
-
-	function currentSlide(n, s) {
-		showSlides(slideIndex = n, s);
-	}
-
-	function showSlides(n, s) {
-		var i;
-		var numSlides = "";
-		
-		if(s > 0)
-			numSlides +=  s;
-		var slides = document.getElementsByClassName("fadeSlides" + numSlides);
-		var dots = document.getElementsByClassName("dot" + numSlides);
-		
-		if(n > slides.length) {
-			slideIndex = 1;
-		}
-		
-		if(n < 1) {
-			slideIndex = slides.length;
-		}
-		
-		for(i = 0; i < slides.length; ++i){
-			slides[i].style.display = "none";
-		}
-		
-		for(i = 0; i < dots.length; ++i) {
-			dots[i].className = dots[i].className.replace("active", "");
-		}
-		
-		slides[slideIndex - 1].style.display = "block";
-		dots[slideIndex-1].className = "dot" + numSlides + " active";
-
-	}
-	</script>
-	-->
-	
-	<!-- For subpages
-	<div class="fadeSlides">
-		<img src="{{site.url}}/images/stochasticTree.PNG" style="width: 100%; height: 25%;"/>
-	</div>
-	
-	<div class="fadeSlides">
-		<img src="{{site.url}}/images/DynamicReflection.PNG" style="width: 100%; height: 25%;"/>
-	</div>
-	
-	<a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1,0)">&#10095;</a>
-	
-	OUTSIDE SLIDESHOW CONTAINER
-	<div style="text-align:center">
-		<span class="dot" onclick="currentSlide(1,0)"></span>
-		<span class="dot" onclick="currentSlide(2,0)"></span>
-		<span class="dot" onclick="currentSlide(3,0)"></span>
-    </div>
-	-->
  </html>
 
 
