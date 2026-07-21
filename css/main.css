@@ -27,7 +27,7 @@ nav, footer
 nav div, footer div
 {
     display: inline;
-    margin-right: 3em;
+    margin-left: 3em;
 }
 
 a
@@ -56,7 +56,7 @@ p
 footer 
 {
     clear: both;
-    border-top: 1em solid #d5d5d5;
+    border-top: 0.25em solid #d5d5d5;
     font-size: .8em;
     margin-bottom: 2.5%;
 }
@@ -72,6 +72,7 @@ footer
 {
     text-align: right;
     margin-right: 3em;
+    float: right;
 }
 
 .slideshow-container
