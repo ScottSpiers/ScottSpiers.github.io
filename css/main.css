@@ -6,13 +6,13 @@ html
 
 body
 {
-    margin: 0px auto;
+    margin: 0em auto;
     min-height: 100%;
 }
 
 .container
 {
-    margin: 60px auto;
+    margin: 4em auto;
     width: 70%;
 }
 
@@ -27,7 +27,7 @@ nav, footer
 nav div, footer div
 {
     display: inline;
-    margin-right: 50px;
+    margin-right: 3em;
 }
 
 a
@@ -66,7 +66,12 @@ footer
     font-size: 1em;
     line-height: 3em;
     background-color: #222222;
+}
+
+.nav-items
+{
     text-align: right;
+    margin-right: 3em;
 }
 
 .slideshow-container
