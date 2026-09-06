@@ -1,8 +1,8 @@
 name: Scott_Spiers_Portfolio
-logo: /images/logo.PNG
+logo: /images/Profile.PNG
 category-list:
-  - About
-  - Work
-  - Personal Projects
+  - Games
+  - Projects
+  - Jams
 theme: jekyll-theme-minimal
 
