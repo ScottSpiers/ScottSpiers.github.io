@@ -4,9 +4,25 @@ title: Scott Spiers | Portfolio
 ---
 
 <div class="about">
-    <p>ABOUT</p>
     <p style="float: right">Some sample text here about myself<br />Testing some line breaks to see how this will work<br /></p>        
-    <img src="./images/Profile.jpg" alt="Image" height="256px" width="256px"/>
+    <img src="./images/Profile.jpg" alt="Image" height="64px" width="64px"/>
+</div>
+
+<div class = "container">
+    {% for category in site.category-list %}
+        <h2 style="clear: both">{{category}}</h2>
+        {% for p in site.pages %} <!--This will be the slides prob shouldn't be pages-->
+            {% if p.category[0] contains category %}  
+                <div class="module" style="float: left">
+                    <h2>{{p.name}}</h2>
+                    <img src="{{site.url}}{{p.thumb}}" style= "width: 600px; height: 400px;"/>
+                    <div class="text-container">
+                        <p>Testing smaller module blocks...</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}				
 </div>
 
 
